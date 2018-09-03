@@ -4,9 +4,16 @@
   <title>Web PushNotification</title>
  </head>
  <body>
+  <h1>Testing Web Browser Push Notifications</h1>
+  
   <script type='text/javascript'>
    window.addEventListener('load', function(){
     console.log('Window loaded');
+    
+          var img = '/to-do-notifications/img/icon-128.png';
+          var text = 'HEY! Your task "' + title + '" is now overdue.';
+          var notification = new Notification('To do list', { body: text /*, icon: img*/ });
+    
    }, false);
   </script>
  </body>
